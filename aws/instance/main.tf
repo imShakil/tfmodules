@@ -5,7 +5,7 @@ resource "aws_key_pair" "ec2_ssh_key" {
 }
 
 resource "aws_instance" "epkbk_ec2" {
-  count = length(var.instance_number)
+  count                  = var.instance_number
   ami                    = var.ami_id
   instance_type          = var.instance_type
   subnet_id              = var.subnet_id

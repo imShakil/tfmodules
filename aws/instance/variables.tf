@@ -20,7 +20,7 @@ variable "tags" {
 }
 
 variable "instance_number" {
-  default = 1
-  type    = number
+  default     = 1
+  type        = number
   description = "Number of instances to launch"
 }
