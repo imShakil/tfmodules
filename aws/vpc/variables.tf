@@ -19,5 +19,5 @@ variable "private_subnets" {
 variable "subnet_size" {
   type        = number
   description = "Number of subnets to create (public and private each)"
-  default     = 4
+  default     = 2
 }

@@ -47,7 +47,7 @@ module "vpc" {
 | cidr_block | CIDR block for VPC | `string` | `"10.0.0.0/16"` | no |
 | public_subnets | List of public subnet CIDR blocks | `list(string)` | `[]` | no |
 | private_subnets | List of private subnet CIDR blocks | `list(string)` | `[]` | no |
-| subnet_size | Number of subnets to create (public and private each) | `number` | `4` | no |
+| subnet_size | Number of subnets to create (public and private each) | `number` | `2` | no |
 
 ## Outputs
 
