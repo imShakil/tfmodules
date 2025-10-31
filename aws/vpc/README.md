@@ -18,7 +18,7 @@ This module creates a complete AWS VPC infrastructure with public and private su
 
 ```hcl
 module "vpc" {
-  source = "git::https://github.com/username/tfmodules.git//aws/vpc"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/vpc"
   
   prefix     = "myapp"
   cidr_block = "10.0.0.0/16"
@@ -29,7 +29,7 @@ module "vpc" {
 
 ```hcl
 module "vpc" {
-  source = "git::https://github.com/username/tfmodules.git//aws/vpc"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/vpc"
   
   prefix          = "production"
   cidr_block      = "172.16.0.0/16"
@@ -107,7 +107,7 @@ data "aws_vpc" "selected" {
 
 ```hcl
 module "vpc" {
-  source = "git::https://github.com/username/tfmodules.git//aws/vpc"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/vpc"
   
   prefix          = "custom"
   cidr_block      = "192.168.0.0/16"

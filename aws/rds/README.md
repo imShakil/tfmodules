@@ -16,7 +16,7 @@ This module creates an AWS RDS instance with a DB subnet group for secure databa
 
 ```hcl
 module "rds" {
-  source = "git::https://github.com/username/tfmodules.git//aws/rds"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/rds"
   
   rds_name            = "myapp"
   rds_admin           = "admin"
@@ -30,7 +30,7 @@ module "rds" {
 
 ```hcl
 module "rds" {
-  source = "git::https://github.com/username/tfmodules.git//aws/rds"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/rds"
   
   prefix              = "production"
   rds_name            = "proddb"
@@ -83,7 +83,7 @@ module "rds" {
 
 ```hcl
 module "rds" {
-  source = "git::https://github.com/username/tfmodules.git//aws/rds"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/rds"
   
   rds_name            = "appdb"
   rds_admin           = "admin"
@@ -97,7 +97,7 @@ module "rds" {
 
 ```hcl
 module "postgres_rds" {
-  source = "git::https://github.com/username/tfmodules.git//aws/rds"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/rds"
   
   prefix              = "postgres"
   rds_name            = "postgres"

@@ -16,7 +16,7 @@ This module creates AWS EC2 instances with SSH key pair management and configura
 
 ```hcl
 module "instance" {
-  source = "git::https://github.com/username/tfmodules.git//aws/instance"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/instance"
   
   ami_id                 = "ami-12345678"
   subnet_id              = "subnet-12345"
@@ -32,7 +32,7 @@ module "instance" {
 
 ```hcl
 module "web_servers" {
-  source = "git::https://github.com/username/tfmodules.git//aws/instance"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/instance"
   
   prefix         = "web"
   instance_type  = "t3.small"
@@ -100,7 +100,7 @@ data "aws_ami" "ubuntu" {
 }
 
 module "web_instance" {
-  source = "git::https://github.com/username/tfmodules.git//aws/instance"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/instance"
   
   prefix         = "web"
   ami_id         = data.aws_ami.ubuntu.id
@@ -119,7 +119,7 @@ module "web_instance" {
 
 ```hcl
 module "app_servers" {
-  source = "git::https://github.com/username/tfmodules.git//aws/instance"
+  source = "git::https://github.com/imShakil/tfmodules.git//aws/instance"
   
   prefix          = "app"
   instance_number = 3
