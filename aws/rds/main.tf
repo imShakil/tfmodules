@@ -17,7 +17,7 @@ resource "aws_db_instance" "rds" {
   password            = var.rds_admin_password
   skip_final_snapshot = var.skip_final_snapshot
 
-  identifier_prefix      = var.prefix
+  identifier             = "${var.prefix}-rds"
   db_subnet_group_name   = aws_db_subnet_group.rds_subg.name
   vpc_security_group_ids = var.security_group_ids
 
